@@ -107,7 +107,7 @@ main {
 
 .profile-photo {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -252,6 +252,12 @@ h3 {
   margin-top: 10px;
 }
 
+.metric-note {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .research-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -301,6 +307,31 @@ h3 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+}
+
+.article-meta-line,
+.category-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--accent-strong);
+  background: #e7f3f2;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.category-label:hover {
+  text-decoration: none;
+  background: #d8eeee;
 }
 
 .article-row h2,
