@@ -22,8 +22,11 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/en/">Home</a>
         <a href="/en/#about">About</a>
+        <a href="/en/#members">Members</a>
         <a href="/en/#research">Research</a>
+        <a href="/en/#projects">Projects</a>
         <a href="/en/#news">Publications</a>
+        <a href="/en/#under-review">Under Review</a>
         <a href="/en/#viewpoint">Viewpoint</a>
         <a href="/archives/">Blog</a>
         <a href="/en/#contact">Links</a>
@@ -124,6 +127,37 @@
       </div>
     </section>
 
+    <section class="content-section" id="members">
+      <p class="section-kicker">Members</p>
+      <h2>Member List</h2>
+      <p class="section-intro">This section currently presents the personal academic profile and can be extended later for students, collaborators, and visiting scholars.</p>
+      <div class="member-list">
+        <article class="member-card">
+          <figure class="member-card__photo">
+            <img src="/images/profile.jpg" alt="Zhang Xin">
+          </figure>
+          <div class="member-card__body">
+            <p class="member-card__role">Assistant Researcher, Hangzhou Institute of Medicine, CAS / Ph.D., The University of Tokyo</p>
+            <h3>Zhang Xin</h3>
+            <p class="member-card__focus">AI-assisted drug discovery, peptide design, natural product screening, molecular dynamics, and drug repositioning</p>
+            <ul>
+              
+                <li>Research interests span AI4S, AIDD, MD simulation, protein-ligand interaction, and peptide drug design.</li>
+              
+                <li>Member of CCF, the CCF Bioinformatics Technical Committee, and CBI Society.</li>
+              
+                <li>Reviewer and young editorial board member for academic journals and conferences, with a focus on interpretable AI and structure-based drug discovery.</li>
+              
+            </ul>
+            <div class="member-links">
+              <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
+              <a class="button" href="https://github.com/zxhuizhang" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="content-section" id="research">
       <p class="section-kicker">Research Areas</p>
       <h2>Research Areas</h2>
@@ -150,6 +184,42 @@
           </article>
         
       </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <p class="section-kicker">Research Projects</p>
+      <h2>Research Directions and Dynamic Visuals</h2>
+      <p class="section-intro">No local PDB/CIF/MD trajectory file was found for direct PyMOL or ChimeraX rendering, so the page uses two local structural videos from the blog directory as dynamic research visuals.</p>
+      <div class="research-showcase">
+        
+          <article class="research-media-card">
+            <div class="research-media-card__video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-md-poster.jpg">
+                <source src="/videos/research-md.mp4" type="video/mp4">
+              </video>
+              <span>MD trajectory visual</span>
+            </div>
+            <div class="research-media-card__body">
+              <h3>Molecular dynamics and protein motion</h3>
+              <p>Protein conformational changes, stability, and binding behavior help connect AI or docking candidates with dynamic mechanistic evidence.</p>
+            </div>
+          </article>
+        
+          <article class="research-media-card">
+            <div class="research-media-card__video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-docking-poster.jpg">
+                <source src="/videos/research-docking.mp4" type="video/mp4">
+              </video>
+              <span>Docking / Flow model</span>
+            </div>
+            <div class="research-media-card__body">
+              <h3>Docking and flow-based molecular generation</h3>
+              <p>Protein-ligand docking, flow-based generative models, and pharmacological constraints are integrated for interpretable candidate generation and optimization.</p>
+            </div>
+          </article>
+        
+      </div>
+      <p class="asset-note">Local MP4 assets have been converted to muted H.264 loop videos for web playback.</p>
     </section>
 
     <section class="content-section" id="news">
@@ -351,6 +421,33 @@
         
       </div>
       <a class="archive-link" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">View complete Google Scholar profile</a>
+    </section>
+
+    <section class="content-section" id="under-review">
+      <p class="section-kicker">Manuscripts Under Review</p>
+      <h2>Submitted and In-preparation Work</h2>
+      <p class="section-intro">These entries publicly describe research directions and target level without disclosing unpublished titles, journal names, or review details.</p>
+      <div class="manuscript-grid">
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Interpretable peptide generation with flow/diffusion constraints</h3>
+            <p>Sequence representation, structural constraints, and generative modeling for anticancer and functional peptide design.</p>
+          </article>
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Debiased drug-protein interaction prediction</h3>
+            <p>A robust DTI/DPI framework addressing target-prior bias and cross-modal structural representation.</p>
+          </article>
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Natural product screening with docking-to-dynamics validation</h3>
+            <p>Natural product candidate discovery supported by docking, molecular dynamics, and binding stability analysis.</p>
+          </article>
+        
+      </div>
     </section>
 
     <section class="content-section" id="viewpoint">

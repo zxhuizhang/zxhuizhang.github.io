@@ -22,8 +22,11 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/ja/">ホーム</a>
         <a href="/ja/#about">紹介</a>
+        <a href="/ja/#members">メンバー</a>
         <a href="/ja/#research">研究</a>
+        <a href="/ja/#projects">プロジェクト</a>
         <a href="/ja/#news">論文</a>
+        <a href="/ja/#under-review">投稿中</a>
         <a href="/ja/#viewpoint">研究観</a>
         <a href="/archives/">ブログ</a>
         <a href="/ja/#contact">リンク</a>
@@ -124,6 +127,37 @@
       </div>
     </section>
 
+    <section class="content-section" id="members">
+      <p class="section-kicker">Members</p>
+      <h2>メンバーリスト</h2>
+      <p class="section-intro">現在は個人学術ページとしてプロフィールを掲載し、今後は学生、共同研究者、訪問研究者を追加できます。</p>
+      <div class="member-list">
+        <article class="member-card">
+          <figure class="member-card__photo">
+            <img src="/images/profile.jpg" alt="張 鑫">
+          </figure>
+          <div class="member-card__body">
+            <p class="member-card__role">中国科学院杭州医学研究所 助理研究員 / 東京大学 博士</p>
+            <h3>張 鑫</h3>
+            <p class="member-card__focus">AI 支援創薬、ペプチド設計、天然物スクリーニング、分子動力学、ドラッグリポジショニング</p>
+            <ul>
+              
+                <li>研究関心は AI4S、AIDD、MD simulation、protein-ligand interaction、peptide drug design に広がっています。</li>
+              
+                <li>CCF、CCF バイオインフォマティクス専門委員会、日本情報計算化学生物学会（CBI）に所属しています。</li>
+              
+                <li>複数の学術誌・会議で査読者および若手編集委員を務め、解釈可能 AI と構造ベース創薬に注力しています。</li>
+              
+            </ul>
+            <div class="member-links">
+              <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
+              <a class="button" href="https://github.com/zxhuizhang" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="content-section" id="research">
       <p class="section-kicker">Research Areas</p>
       <h2>研究分野</h2>
@@ -150,6 +184,42 @@
           </article>
         
       </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <p class="section-kicker">Research Projects</p>
+      <h2>研究方向と動的ビジュアル</h2>
+      <p class="section-intro">PyMOL/ChimeraX で直接表示できる PDB/CIF/MD 軌跡ファイルはローカルで見つからなかったため、ブログディレクトリ内の 2 つの構造動画を動的研究素材として使用します。</p>
+      <div class="research-showcase">
+        
+          <article class="research-media-card">
+            <div class="research-media-card__video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-md-poster.jpg">
+                <source src="/videos/research-md.mp4" type="video/mp4">
+              </video>
+              <span>MD trajectory visual</span>
+            </div>
+            <div class="research-media-card__body">
+              <h3>Molecular dynamics and protein motion</h3>
+              <p>タンパク質の構造変化、安定性、結合挙動により、AI や docking 候補を動的な機構証拠へつなげます。</p>
+            </div>
+          </article>
+        
+          <article class="research-media-card">
+            <div class="research-media-card__video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-docking-poster.jpg">
+                <source src="/videos/research-docking.mp4" type="video/mp4">
+              </video>
+              <span>Docking / Flow model</span>
+            </div>
+            <div class="research-media-card__body">
+              <h3>Docking and flow-based molecular generation</h3>
+              <p>タンパク質-リガンド docking、flow 型生成モデル、薬効制約を統合し、解釈可能な候補分子生成と最適化を進めます。</p>
+            </div>
+          </article>
+        
+      </div>
+      <p class="asset-note">ローカル MP4 はウェブ再生用に無音 H.264 ループ動画へ変換済みです。</p>
     </section>
 
     <section class="content-section" id="news">
@@ -351,6 +421,33 @@
         
       </div>
       <a class="archive-link" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar を見る</a>
+    </section>
+
+    <section class="content-section" id="under-review">
+      <p class="section-kicker">Manuscripts Under Review</p>
+      <h2>投稿中・準備中の研究</h2>
+      <p class="section-intro">未発表論文の具体的な題名、投稿誌、査読詳細を公開せず、研究方向と目標レベルのみを示します。</p>
+      <div class="manuscript-grid">
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Interpretable peptide generation with flow/diffusion constraints</h3>
+            <p>抗がんペプチドと機能性ペプチドを対象に、配列表現、構造制約、生成モデルを統合します。</p>
+          </article>
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Debiased drug-protein interaction prediction</h3>
+            <p>標的事前バイアスとクロスモーダル構造表現に対応した DTI/DPI 予測フレームワークです。</p>
+          </article>
+        
+          <article class="manuscript-card">
+            <span>Target: CAS Q1 journal</span>
+            <h3>Natural product screening with docking-to-dynamics validation</h3>
+            <p>天然物候補空間を用い、docking、分子動力学、結合安定性解析で候補分子を評価します。</p>
+          </article>
+        
+      </div>
     </section>
 
     <section class="content-section" id="viewpoint">
