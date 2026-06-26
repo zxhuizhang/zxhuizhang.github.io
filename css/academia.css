@@ -312,6 +312,45 @@ main {
   object-position: center;
 }
 
+.hero-academic--top-visual {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.hero-academic--top-visual .hero-academic__visual {
+  min-height: 280px;
+  border-left: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-academic--top-visual .hero-academic__content {
+  padding: 34px 38px 38px;
+}
+
+.page-hero {
+  margin-bottom: 30px;
+  padding: 34px 38px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(120deg, rgba(13, 102, 179, 0.08), rgba(10, 123, 120, 0.06)),
+    var(--paper);
+  box-shadow: 0 16px 44px rgba(13, 47, 91, 0.08);
+}
+
+.page-hero h1 {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.page-hero p:last-child {
+  max-width: 840px;
+  margin: 14px 0 0;
+  color: #25313d;
+  font-size: 18px;
+}
+
 .chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +381,10 @@ main {
 .home-main,
 .home-sidebar {
   min-width: 0;
+}
+
+.home-layout--single {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .content-section,
@@ -511,6 +554,12 @@ main {
   margin: 0 0 12px;
   color: #2d3944;
   font-weight: 700;
+}
+
+.member-card__body > p:not(.member-card__role):not(.member-card__focus) {
+  margin: 0 0 10px;
+  color: #24313d;
+  font-size: 16px;
 }
 
 .member-card ul {
@@ -720,6 +769,16 @@ main {
   font-weight: 800;
 }
 
+.metrics-list--inline {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 10px;
+}
+
+.metrics-list--inline div {
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
 .metric-note {
   margin: 10px 0 0;
   color: var(--muted);
@@ -738,6 +797,34 @@ main {
 
 .link-list li {
   margin-bottom: 8px;
+}
+
+.link-list--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link-list--grid li {
+  margin-bottom: 0;
+}
+
+.link-list--grid a {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  font-weight: 800;
+}
+
+.link-list--grid a:hover {
+  border-color: var(--blue);
+  text-decoration: none;
 }
 
 .button {
@@ -946,7 +1033,9 @@ main {
   .area-list,
   .viewpoint-list,
   .research-showcase,
-  .manuscript-grid {
+  .manuscript-grid,
+  .metrics-list--inline,
+  .link-list--grid {
     grid-template-columns: 1fr;
   }
 
@@ -991,8 +1080,16 @@ main {
     padding: 28px 20px;
   }
 
+  .page-hero {
+    padding: 26px 20px;
+  }
+
   .hero-academic h1 {
     font-size: 34px;
+  }
+
+  .page-hero h1 {
+    font-size: 30px;
   }
 
   .hero-academic h2,

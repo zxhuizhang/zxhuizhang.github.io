@@ -1,11 +1,11 @@
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>张鑫 | Zhang Xin</title>
-  <meta name="description" content="张鑫个人学术主页：中科院杭州医学所助理研究员，研究 AI 辅助小分子和多肽类药物设计、天然产物筛选、分子动力学模拟与药物重定位。">
+  <title>Zhang Xin Academic Page | AI Drug Discovery / Bioinformatics</title>
+  <meta name="description" content="Zhang Xin academic website for AI-assisted drug discovery, bioinformatics, peptide design, natural product screening, molecular dynamics, and drug repositioning.">
   <meta name="author" content="Zhangxin Hui">
   <link rel="stylesheet" href="/css/academia.css">
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -15,26 +15,23 @@
       <a class="site-brand" href="/">
         <span class="site-brand__mark">ZX</span>
         <span class="site-brand__text">
-          <span class="site-brand__name">张鑫个人学术主页</span>
-          <span class="site-brand__field">AI 药物发现 / 生物信息学</span>
+          <span class="site-brand__name">Zhang Xin Academic Page</span>
+          <span class="site-brand__field">AI Drug Discovery / Bioinformatics</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="/">首页</a>
-        <a href="/#members">成员</a>
-        <a href="/#research">研究</a>
-        <a href="/#projects">项目</a>
-        <a href="/#news">论文</a>
-        <a href="/#under-review">在投</a>
-        <a href="/#viewpoint">观点</a>
-        <a href="/archives/">博客</a>
-        <a href="/#contact">链接</a>
+        <a href="/">Home</a>
+        <a href="/members/">Members</a>
+        <a href="/research/">Research</a>
+        <a href="/publications/">Publications</a>
+        <a href="/blog/">Blog</a>
+        <a href="/links/">Links</a>
       </nav>
       <nav class="language-switcher" aria-label="Language switcher">
         
-          <a class="is-active" href="/">中文</a>
+          <a class="is-active" href="/">EN</a>
         
-          <a class="" href="/en/">EN</a>
+          <a class="" href="/zh/">中文</a>
         
           <a class="" href="/ja/">日本語</a>
         
@@ -44,523 +41,159 @@
   <main>
     
 
-<section class="hero-academic">
-  <div class="hero-academic__content">
-    <p class="eyebrow">AI Drug Discovery · Bioinformatics · Molecular Simulation</p>
-    <h1>张鑫</h1>
-    <h2>中科院杭州医学所助理研究员 / 东京大学博士</h2>
-    <p class="hero-lead">聚焦 AI 辅助小分子与多肽类药物设计、天然产物筛选、分子动力学模拟和药物重定位，把结构信息、算法模型与可验证的药物发现问题连接起来。</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
-      <a class="button" href="/#news">研究更新</a>
-      <a class="button" href="/archives/">博客文章</a>
-      <a class="button" href="/#contact">联系</a>
+
+  <section class="hero-academic hero-academic--top-visual">
+    <div class="hero-academic__visual">
+      <img src="/images/protein-structure-hero.png" alt="Protein complex rendering">
     </div>
-    <p class="latest-line">最新更新：Google Scholar 于 2026-06-25 更新为 16 篇论文、363 次引用；最新工作集中在抗癌多肽生成、Mpro 结构抑制剂、药物-蛋白互作预测与生物功能材料。</p>
-  </div>
-  <div class="hero-academic__visual">
-    <img src="/images/protein-structure-hero.png" alt="PyMOL/ChimeraX style protein complex rendering">
-  </div>
-</section>
+    <div class="hero-academic__content">
+      <p class="eyebrow">AI Drug Discovery · Bioinformatics · Molecular Simulation</p>
+      <h1>Zhang Xin</h1>
+      <h2>Assistant Researcher, Hangzhou Institute of Medicine, Chinese Academy of Sciences / Ph.D., The University of Tokyo</h2>
+      <p class="hero-lead">My work focuses on AI-assisted small-molecule and peptide drug design, natural product screening, molecular dynamics simulation, and drug repositioning, connecting structural knowledge with testable drug discovery hypotheses.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="/research/">Research Updates</a>
+        <a class="button" href="/members/">Members</a>
+        <a class="button" href="/publications/">News</a>
+        <a class="button" href="/links/">Contact</a>
+      </div>
+    </div>
+  </section>
 
-<section class="chip-row" aria-label="Research keywords">
-  
-    <span>AI4S</span>
-  
-    <span>AIDD</span>
-  
-    <span>Peptide Design</span>
-  
-    <span>Natural Products</span>
-  
-    <span>Molecular Dynamics</span>
-  
-    <span>Drug Repositioning</span>
-  
-</section>
+  <section class="chip-row" aria-label="Research keywords">
+    
+      <span>AI4S</span>
+    
+      <span>AIDD</span>
+    
+      <span>Peptide Design</span>
+    
+      <span>Natural Products</span>
+    
+      <span>Molecular Dynamics</span>
+    
+      <span>Drug Repositioning</span>
+    
+  </section>
 
-<div class="home-layout">
+
+<div class="home-layout home-layout--single">
   <main class="home-main">
-    <section class="content-section" id="vision">
-      <p class="section-kicker">Research Vision</p>
-      <h2>以结构约束的 AI 推动可解释药物发现</h2>
-      <p class="section-intro">我希望把 AI 模型从“打分器”推进为“可解释的研究助手”：它既要处理序列、结构、配体和动态图谱，也要服务于真实候选物发现、机制解释和后续实验决策。</p>
-      <div class="vision-grid">
-        
-          <article>
-            <strong>AI</strong>
-            <h3>模型</h3>
-            <p>用生成模型、对比学习、多核集成和去偏学习处理药物-靶标关系。</p>
+    
+      <section class="content-section" id="members">
+        <p class="section-kicker">Members</p>
+        <h2>Member List</h2>
+        <p class="section-intro">The personal CV and member information are unified here and can later be expanded for students, collaborators, and visiting scholars.</p>
+        <div class="member-list">
+          <article class="member-card">
+            <figure class="member-card__photo">
+              <img src="/images/profile.jpg" alt="Zhang Xin">
+            </figure>
+            <div class="member-card__body">
+              <p class="member-card__role">Assistant Researcher, Hangzhou Institute of Medicine, CAS / Ph.D., The University of Tokyo</p>
+              <h3>Zhang Xin</h3>
+              <p class="member-card__focus">AI-assisted drug discovery, peptide design, natural product screening, molecular dynamics, and drug repositioning</p>
+              
+                <p>Zhang Xin is an Assistant Researcher at the Hangzhou Institute of Medicine, Chinese Academy of Sciences, and received his Ph.D. from The University of Tokyo. His research covers AI-assisted small-molecule and peptide drug design, natural product screening based on protein and ligand structures, molecular dynamics simulation, and drug repositioning algorithms.</p>
+              
+              <ul>
+                
+                  <li>Research interests span AI4S, AIDD, MD simulation, protein-ligand interaction, and peptide drug design.</li>
+                
+                  <li>Member of CCF, the CCF Bioinformatics Technical Committee, and CBI Society.</li>
+                
+                  <li>Reviewer and young editorial board member for academic journals and conferences, with a focus on interpretable AI and structure-based drug discovery.</li>
+                
+              </ul>
+              <div class="member-links">
+                <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
+                <a class="button" href="https://github.com/zxhuizhang" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
           </article>
-        
-          <article>
-            <strong>STR</strong>
-            <h3>结构</h3>
-            <p>把蛋白结构、配体构象、结合口袋和天然产物空间纳入筛选流程。</p>
-          </article>
-        
-          <article>
-            <strong>MD</strong>
-            <h3>模拟</h3>
-            <p>用分子动力学与能量分析补足静态对接，观察候选分子的稳定结合行为。</p>
-          </article>
-        
-      </div>
-    </section>
+        </div>
+      </section>
+    
 
-    <section class="content-section" id="members">
-      <p class="section-kicker">Members</p>
-      <h2>成员列表</h2>
-      <p class="section-intro">个人简历与成员信息统一在此展示，后续可继续扩展学生、合作成员和访问学者。</p>
-      <div class="member-list">
-        <article class="member-card">
-          <figure class="member-card__photo">
-            <img src="/images/profile.jpg" alt="张鑫">
-          </figure>
-          <div class="member-card__body">
-            <p class="member-card__role">中科院杭州医学所助理研究员 / 东京大学博士</p>
-            <h3>张鑫</h3>
-            <p class="member-card__focus">AI 辅助药物发现、多肽设计、天然产物筛选、分子动力学模拟、药物重定位</p>
-            <ul>
-              
-                <li>研究方向覆盖 AI4S、AIDD、MD simulation、protein-ligand interaction 和 peptide drug design。</li>
-              
-                <li>中国计算机学会（CCF）会员、生物信息学专业委员会委员、日本情报计算化学生物学会（CBI）会员。</li>
-              
-                <li>担任多个期刊和会议审稿人及青年编委，持续关注可解释 AI 与结构基础药物发现。</li>
-              
-            </ul>
-            <div class="member-links">
-              <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
-              <a class="button" href="https://github.com/zxhuizhang" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+    
+      <section class="content-section" id="research">
+        <p class="section-kicker">Research Areas</p>
+        <h2>Research Areas</h2>
+        <div class="area-list">
+          
+            <article>
+              <h3>AI-assisted molecular and peptide drug design</h3>
+              <p>Integrating generative models, sequence/structure representations, and pharmacological constraints for interpretable candidate design.</p>
+            </article>
+          
+            <article>
+              <h3>Natural product and structure-based virtual screening</h3>
+              <p>Using natural product databases, protein structures, and ligand structures for lead discovery against targets such as Mpro and VP37.</p>
+            </article>
+          
+            <article>
+              <h3>Drug-target interaction and repositioning algorithms</h3>
+              <p>Developing multimodal, multi-structural, and debiased learning frameworks for robust DTI/DPI prediction.</p>
+            </article>
+          
+            <article>
+              <h3>Molecular dynamics and mechanism interpretation</h3>
+              <p>Strengthening AI predictions with molecular dynamics, binding stability analysis, and structural explanation.</p>
+            </article>
+          
+        </div>
+      </section>
 
-    <section class="content-section" id="research">
-      <p class="section-kicker">Research Areas</p>
-      <h2>研究方向</h2>
-      <div class="area-list">
-        
-          <article>
-            <h3>AI 辅助小分子与多肽药物设计</h3>
-            <p>结合生成模型、序列/结构表征和药效约束，探索可解释、可优化的候选药物设计流程。</p>
-          </article>
-        
-          <article>
-            <h3>天然产物与结构基础虚拟筛选</h3>
-            <p>面向 Mpro、VP37 等靶标，把天然产物数据库、蛋白结构和配体结构用于先导化合物发现。</p>
-          </article>
-        
-          <article>
-            <h3>药物-靶标互作与重定位算法</h3>
-            <p>发展多模态、多结构和去偏学习框架，提升 DTI/DPI 预测在真实靶标空间中的泛化能力。</p>
-          </article>
-        
-          <article>
-            <h3>分子动力学与机制解释</h3>
-            <p>用分子动力学模拟、结合稳定性分析和结构解释补强 AI 预测结果。</p>
-          </article>
-        
-      </div>
-    </section>
+      <section class="content-section" id="projects">
+        <p class="section-kicker">Research Projects</p>
+        <h2>Research Directions and Dynamic Visuals</h2>
+        <p class="section-intro">Research directions span protein-structure interpretation, molecular dynamics simulation, candidate generation, and docking-based validation for AI-assisted drug discovery.</p>
+        <div class="research-showcase">
+          
+            <article class="research-media-card">
+              <div class="research-media-card__video">
+                <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-md-poster.jpg">
+                  <source src="/videos/research-md.mp4" type="video/mp4">
+                </video>
+                <span>MD trajectory visual</span>
+              </div>
+              <div class="research-media-card__body">
+                <h3>Molecular dynamics and protein motion</h3>
+                <p>Protein conformational changes, stability, and binding behavior help connect AI or docking candidates with dynamic mechanistic evidence.</p>
+              </div>
+            </article>
+          
+            <article class="research-media-card">
+              <div class="research-media-card__video">
+                <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-docking-poster.jpg">
+                  <source src="/videos/research-docking.mp4" type="video/mp4">
+                </video>
+                <span>Docking / Flow model</span>
+              </div>
+              <div class="research-media-card__body">
+                <h3>Docking and flow-based molecular generation</h3>
+                <p>Protein-ligand docking, flow-based generative models, and pharmacological constraints are integrated for interpretable candidate generation and optimization.</p>
+              </div>
+            </article>
+          
+        </div>
+        <p class="asset-note">Dynamic visuals highlight protein motion, ligand binding behavior, and generative molecular design workflows.</p>
+      </section>
+    
 
-    <section class="content-section" id="projects">
-      <p class="section-kicker">Research Projects</p>
-      <h2>课题方向与动态展示</h2>
-      <p class="section-intro">围绕 AI 辅助药物发现，展示从蛋白结构理解、分子动力学模拟、候选分子生成到对接验证的研究方向。</p>
-      <div class="research-showcase">
-        
-          <article class="research-media-card">
-            <div class="research-media-card__video">
-              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-md-poster.jpg">
-                <source src="/videos/research-md.mp4" type="video/mp4">
-              </video>
-              <span>MD trajectory visual</span>
-            </div>
-            <div class="research-media-card__body">
-              <h3>Molecular dynamics and protein motion</h3>
-              <p>用蛋白构象变化、稳定性和结合行为解释 AI 或 docking 候选结果，形成从静态结构到动态机制的证据链。</p>
-            </div>
-          </article>
-        
-          <article class="research-media-card">
-            <div class="research-media-card__video">
-              <video autoplay muted loop playsinline preload="metadata" poster="/images/research/research-docking-poster.jpg">
-                <source src="/videos/research-docking.mp4" type="video/mp4">
-              </video>
-              <span>Docking / Flow model</span>
-            </div>
-            <div class="research-media-card__body">
-              <h3>Docking and flow-based molecular generation</h3>
-              <p>结合蛋白-配体对接、生成式 flow 模型和药效约束，探索可解释候选分子的生成、筛选与优化。</p>
-            </div>
-          </article>
-        
-      </div>
-      <p class="asset-note">动态展示聚焦蛋白构象变化、配体结合行为与生成式分子设计流程。</p>
-    </section>
+    
 
-    <section class="content-section" id="news">
-      <p class="section-kicker">News</p>
-      <h2>论文与研究进展</h2>
-      <div class="publication-list">
-        
-          <article class="publication-item">
-            <time>2026</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:roLk4NBRz8UC" target="_blank" rel="noopener">Enhancing anticancer peptide discovery: A fusion-centric framework with conditional diffusion for prediction and generation</a></h3>
-              <p>融合式表征与条件扩散生成用于抗癌多肽预测和设计。</p>
-              <div class="article-meta-line">
-                <span>PLOS Computational Biology 22 (3), e1014098</span>
-                <span>引用: 0</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2026</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:LkGwnXOMwfcC" target="_blank" rel="noopener">From 2020 to 2025: Comprehensive review Decoding novel structural inhibitors for Mpro of SARS-CoV-2</a></h3>
-              <p>综述 2020-2025 年 SARS-CoV-2 Mpro 结构抑制剂研究。</p>
-              <div class="article-meta-line">
-                <span>Biochemical Pharmacology, 117791</span>
-                <span>引用: 2</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2026</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:_FxGoFyzp5QC" target="_blank" rel="noopener">CMMSCL-DPI: cross-modal multi-structural contrastive learning for predicting drug-protein interactions</a></h3>
-              <p>跨模态多结构对比学习用于药物-蛋白互作预测。</p>
-              <div class="article-meta-line">
-                <span>BMC Biology 24 (1), 69</span>
-                <span>引用: 0</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2026</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:ufrVoPGSRksC" target="_blank" rel="noopener">Biofunctional ostrich tendon gelatin-based hot-melt type adhesive for enhanced wound hemostasis and healing</a></h3>
-              <p>生物功能明胶基热熔黏合剂用于止血与创面修复。</p>
-              <div class="article-meta-line">
-                <span>Chemical Engineering Journal, 172936</span>
-                <span>引用: 1</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2025</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener">TAPB: an interventional debiasing framework for alleviating target prior bias in drug-target interaction prediction</a></h3>
-              <p>干预式去偏框架缓解 DTI 预测中的靶标先验偏差。</p>
-              <div class="article-meta-line">
-                <span>Nature Communications</span>
-                <span>引用: 5</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2025</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:eQOLeE2rZwMC" target="_blank" rel="noopener">DTI-RME: a robust and multi-kernel ensemble approach for drug-target interaction prediction</a></h3>
-              <p>多核集成方法用于稳健的药物-靶标互作预测。</p>
-              <div class="article-meta-line">
-                <span>BMC Biology 23 (1), 225</span>
-                <span>引用: 1</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2025</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:YsMSGLbcyi4C" target="_blank" rel="noopener">Beyond ST-246: Unveiling Potential Inhibitors Targeting VP37 Protein in Silico From Herb and Marine Databases</a></h3>
-              <p>从中草药与海洋数据库中筛选 VP37 蛋白潜在抑制剂。</p>
-              <div class="article-meta-line">
-                <span>Journal of Computational Chemistry 46 (11), e70111</span>
-                <span>引用: 1</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2024</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener">From docking to dynamics: Unveiling the potential non-peptide and non-covalent inhibitors of Mpro from natural products</a></h3>
-              <p>从对接到动力学，解析天然产物来源 Mpro 抑制剂。</p>
-              <div class="article-meta-line">
-                <span>Computers in Biology and Medicine 181, 108963</span>
-                <span>引用: 3</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2024</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:W7OEmFMy1HYC" target="_blank" rel="noopener">TCM@MPXV: A Resource for Treating Monkeypox Patients in Traditional Chinese Medicine</a></h3>
-              <p>面向猴痘治疗的传统中医药资源整理。</p>
-              <div class="article-meta-line">
-                <span>Google Scholar record</span>
-                <span>引用: 0</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2024</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:Se3iqnhoufwC" target="_blank" rel="noopener">Identification of human microRNA-disease association via low-rank approximation-based link propagation and multiple kernel learning</a></h3>
-              <p>低秩近似、链路传播与多核学习识别 miRNA-疾病关联。</p>
-              <div class="article-meta-line">
-                <span>Frontiers of Computer Science 18 (2), 182903</span>
-                <span>引用: 74</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2023</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener">Virtual Screening of Traditional Chinese Medicine for Discovery of Potential Anti-SARS-CoV-2 Lead Molecules</a></h3>
-              <p>传统中药虚拟筛选用于抗 SARS-CoV-2 先导分子发现。</p>
-              <div class="article-meta-line">
-                <span>ICBCB 2023 Proceedings</span>
-                <span>引用: 0</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2023</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener">ZooPathWeb: a comprehensive web resource for zoonotic pathogens</a></h3>
-              <p>人兽共患病病原体综合网络资源。</p>
-              <div class="article-meta-line">
-                <span>Bioinformatics Advances 3 (1), vbad094</span>
-                <span>引用: 2</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2016</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:u-x6o8ySG0sC" target="_blank" rel="noopener">Janus silver-mesoporous silica nanocarriers for SERS traceable and pH-sensitive drug delivery in cancer therapy</a></h3>
-              <p>SERS 可追踪、pH 响应纳米载体用于癌症药物递送。</p>
-              <div class="article-meta-line">
-                <span>ACS Applied Materials &amp; Interfaces 8 (7), 4303-4308</span>
-                <span>引用: 131</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2015</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener">Facile Synthesis of Core-shell Magnetic Mesoporous Silica Nanoparticles for pH-sensitive Anticancer Drug Delivery</a></h3>
-              <p>核壳磁性介孔二氧化硅纳米颗粒用于 pH 敏感抗癌递送。</p>
-              <div class="article-meta-line">
-                <span>Chemical Biology &amp; Drug Design 86 (6), 1548-1553</span>
-                <span>引用: 41</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2015</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener">Noninvasive theranostic imaging of HSV-TK/GCV suicide gene therapy in liver cancer by folate-targeted quantum dot-based liposomes</a></h3>
-              <p>叶酸靶向量子点脂质体用于肝癌基因治疗无创诊疗成像。</p>
-              <div class="article-meta-line">
-                <span>Biomaterials Science 3 (6), 833-841</span>
-                <span>引用: 71</span>
-              </div>
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time>2014</time>
-            <div>
-              <h3><a href="https://scholar.google.co.jp/citations?view_op=view_citation&hl=en&user=HX4FCioAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HX4FCioAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener">Real-time visualizing and tracing of HSV-TK/GCV suicide gene therapy by near-infrared fluorescent quantum dots</a></h3>
-              <p>近红外量子点实时示踪 HSV-TK/GCV 自杀基因治疗。</p>
-              <div class="article-meta-line">
-                <span>ACS Applied Materials &amp; Interfaces 6 (14), 11082-11090</span>
-                <span>引用: 31</span>
-              </div>
-            </div>
-          </article>
-        
-      </div>
-      <a class="archive-link" href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">查看完整 Google Scholar</a>
-    </section>
+    
 
-    <section class="content-section" id="under-review">
-      <p class="section-kicker">Manuscripts Under Review</p>
-      <h2>在投与准备发表工作</h2>
-      <p class="section-intro">以下条目用于公开展示研究方向和投稿定位，不提前公开未发表论文的具体题名、期刊或审稿细节。</p>
-      <div class="manuscript-grid">
-        
-          <article class="manuscript-card">
-            <span>Target: CAS Q1 journal</span>
-            <h3>Interpretable peptide generation with flow/diffusion constraints</h3>
-            <p>围绕抗癌多肽和功能多肽，整合序列表征、结构约束和生成模型，目标投向中科院一区计算生物学或药物信息学期刊。</p>
-          </article>
-        
-          <article class="manuscript-card">
-            <span>Target: CAS Q1 journal</span>
-            <h3>Debiased drug-protein interaction prediction</h3>
-            <p>面向 DTI/DPI 任务中的靶标先验偏差与跨模态结构表征，构建更稳健的药物-蛋白互作预测框架。</p>
-          </article>
-        
-          <article class="manuscript-card">
-            <span>Target: CAS Q1 journal</span>
-            <h3>Natural product screening with docking-to-dynamics validation</h3>
-            <p>以天然产物数据库为候选空间，结合分子对接、分子动力学和结合稳定性分析，筛选潜在先导分子。</p>
-          </article>
-        
-      </div>
-    </section>
-
-    <section class="content-section" id="viewpoint">
-      <p class="section-kicker">Viewpoint</p>
-      <h2>个人观点</h2>
-      <div class="viewpoint-list">
-        
-          <article>
-            <h3>结构不是装饰，而是约束</h3>
-            <p>AIDD 的核心不是只给候选物排序，而是让模型理解结合口袋、构象变化和可成药性之间的关系。</p>
-          </article>
-        
-          <article>
-            <h3>多肽设计需要闭环</h3>
-            <p>多肽药物设计需要把生成、筛选、结构预测、动力学模拟和实验反馈放在同一条闭环中。</p>
-          </article>
-        
-          <article>
-            <h3>天然产物筛选是提出假设</h3>
-            <p>虚拟筛选和重定位算法可以快速提出高价值假设，但最终仍要回到机制解释和实验验证。</p>
-          </article>
-        
-      </div>
-    </section>
-
-    <section class="content-section" id="articles">
-      <p class="section-kicker">Blog</p>
-      <h2>博客文章</h2>
-      <div class="publication-list compact-list">
-        
-        
-          <article class="publication-item">
-            <time datetime="2026-06-07">2026.6.7</time>
-            <div>
-              <h3><a href="/2026/06/07/aidd-new-idea-2026/">New Idea: From AIDD Models to Research Decision Loops</a></h3>
-              
-                <div class="article-meta-line">
-                  
-                    <a class="category-label" href="/categories/%E8%8D%AF%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/">药物信息学</a>
-                  
-                </div>
-              
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time datetime="2026-06-07">2026.6.7</time>
-            <div>
-              <h3><a href="/2026/06/07/hello-world/">Hello World: Restarting My Blog</a></h3>
-              
-                <div class="article-meta-line">
-                  
-                    <a class="category-label" href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/">生物信息学</a>
-                  
-                </div>
-              
-            </div>
-          </article>
-        
-          <article class="publication-item">
-            <time datetime="2023-03-15">2023.3.15</time>
-            <div>
-              <h3><a href="/2023/03/15/test/">test</a></h3>
-              
-                <div class="article-meta-line">
-                  
-                    <a class="category-label" href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/">生物信息学</a>
-                  
-                </div>
-              
-            </div>
-          </article>
-        
-      </div>
-      <a class="archive-link" href="/archives/">旧文章</a>
-    </section>
+    
   </main>
-
-  <aside class="home-sidebar">
-    <section class="side-section language-panel">
-      <div class="section-title-line">
-        <h2>中文</h2>
-      </div>
-      <nav class="language-list" aria-label="Language switcher">
-        
-          <a class="is-active" href="/">中文</a>
-        
-          <a class="" href="/en/">EN</a>
-        
-          <a class="" href="/ja/">日本語</a>
-        
-      </nav>
-    </section>
-
-    <section class="side-section">
-      <div class="section-title-line">
-        <h2>Scholar Metrics</h2>
-      </div>
-      <dl class="metrics-list">
-        
-          <div><dt>论文</dt><dd>16</dd></div>
-        
-          <div><dt>引用</dt><dd>363</dd></div>
-        
-          <div><dt>h-index</dt><dd>5</dd></div>
-        
-          <div><dt>i10-index</dt><dd>5</dd></div>
-        
-      </dl>
-      <p class="metric-note">Google Scholar 更新于 2026-06-25</p>
-    </section>
-
-    <section class="side-section" id="contact">
-      <div class="section-title-line">
-        <h2>联系与链接</h2>
-      </div>
-      <ul class="link-list">
-        <li><a href="https://scholar.google.co.jp/citations?user=HX4FCioAAAAJ&hl=ja" target="_blank" rel="noopener">查看完整 Google Scholar</a></li>
-        <li><a href="https://github.com/zxhuizhang" target="_blank" rel="noopener">GitHub 项目</a></li>
-        <li><a href="https://aimlab.cc/team/" target="_blank" rel="noopener">AIM Lab 团队主页</a></li>
-        <li><a href="/categories/%E8%8D%AF%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/">药物信息学</a></li>
-        <li><a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/">生物信息学</a></li>
-      </ul>
-    </section>
-  </aside>
 </div>
 
   </main>
   <footer class="site-footer">
     <div class="site-footer__inner">
       <span>&copy; 2026 张鑫 · Zhang Xin</span>
-      <span>AI 药物发现 / 生物信息学</span>
+      <span>AI Drug Discovery / Bioinformatics</span>
     </div>
   </footer>
 </body>
