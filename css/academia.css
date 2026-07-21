@@ -720,6 +720,10 @@ main {
   gap: 14px;
 }
 
+.highlight-grid + .highlight-week {
+  margin-top: 24px;
+}
+
 .highlight-card {
   min-height: 280px;
   display: grid;
@@ -751,6 +755,18 @@ main {
   border-radius: 4px;
   color: #ffffff;
   background: var(--blue-dark);
+  font-weight: 800;
+}
+
+.highlight-card__type {
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border: 1px solid rgba(10, 123, 120, 0.24);
+  border-radius: 4px;
+  color: var(--teal);
+  background: rgba(10, 123, 120, 0.08);
   font-weight: 800;
 }
 
