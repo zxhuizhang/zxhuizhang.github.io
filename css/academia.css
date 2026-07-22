@@ -724,6 +724,20 @@ main {
   margin-top: 24px;
 }
 
+.highlight-empty {
+  margin: 0 0 24px;
+  padding: 14px 16px;
+  border: 1px dashed rgba(13, 102, 179, 0.24);
+  border-radius: 6px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.highlight-empty + .highlight-week {
+  margin-top: 24px;
+}
+
 .highlight-card {
   min-height: 280px;
   display: grid;
