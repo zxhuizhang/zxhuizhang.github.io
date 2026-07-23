@@ -956,6 +956,126 @@ main {
   text-decoration: none;
 }
 
+.journal-table {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.journal-table table {
+  width: 100%;
+  min-width: 1040px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.journal-table th,
+.journal-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.journal-table th {
+  color: #ffffff;
+  background: var(--blue-dark);
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.journal-table tbody tr:nth-child(even) {
+  background: #f6f9fc;
+}
+
+.journal-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.journal-table td:first-child {
+  width: 210px;
+}
+
+.journal-table td:first-child strong,
+.journal-table td:nth-child(3) strong {
+  display: block;
+  color: var(--blue-dark);
+  line-height: 1.35;
+}
+
+.journal-table td:first-child span,
+.journal-table td:nth-child(3) span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.journal-table td:nth-child(2) {
+  width: 150px;
+}
+
+.journal-table td:nth-child(3) {
+  width: 84px;
+}
+
+.journal-table td:nth-child(4),
+.journal-table td:nth-child(5) {
+  width: 230px;
+  color: #2c3a47;
+}
+
+.journal-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--teal);
+  background: #e8f6f5;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.journal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 160px;
+}
+
+.journal-actions a {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--blue-dark);
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.journal-actions a:hover {
+  color: #ffffff;
+  background: var(--teal);
+  border-color: var(--teal);
+  text-decoration: none;
+}
+
+.journal-note {
+  max-width: 920px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 .button {
   min-height: 38px;
   display: inline-flex;
