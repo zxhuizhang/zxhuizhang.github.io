@@ -956,6 +956,43 @@ main {
   text-decoration: none;
 }
 
+.contact-email-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 14px;
+}
+
+.contact-email-card {
+  min-height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f8fbfd;
+}
+
+.contact-email-card span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact-email-card strong {
+  color: var(--blue-dark);
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.contact-email-card:hover {
+  border-color: var(--teal);
+  text-decoration: none;
+}
+
 .journal-table {
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -1096,6 +1133,60 @@ main {
 
 .conference-table td:nth-child(5) {
   width: 180px;
+}
+
+.collection-table table {
+  min-width: 1120px;
+}
+
+.collection-table td:first-child {
+  width: 250px;
+}
+
+.collection-table td:nth-child(2) {
+  width: 145px;
+}
+
+.collection-table td:nth-child(3) {
+  width: 120px;
+}
+
+.collection-table td:nth-child(4),
+.collection-table td:nth-child(5) {
+  width: 250px;
+  color: #2c3a47;
+}
+
+.collection-table td:nth-child(6) {
+  width: 150px;
+}
+
+.conference-portal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.conference-portal-card strong,
+.conference-portal-card span {
+  display: block;
+}
+
+.conference-portal-card strong {
+  color: var(--blue-dark);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.conference-portal-card span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .button {
@@ -1307,8 +1398,14 @@ main {
   .highlight-grid,
   .manuscript-grid,
   .metrics-list--inline,
+  .contact-email-grid,
   .link-list--grid {
     grid-template-columns: 1fr;
+  }
+
+  .conference-portal-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .about-block {
