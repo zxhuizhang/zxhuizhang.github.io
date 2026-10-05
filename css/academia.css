@@ -997,7 +997,7 @@ main {
 
 .publication-item {
   display: grid;
-  grid-template-columns: 90px minmax(0, 1fr);
+  grid-template-columns: 116px minmax(0, 1fr);
   gap: 16px;
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
@@ -1006,6 +1006,8 @@ main {
 .publication-item time {
   color: var(--blue-dark);
   font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .publication-item p {
