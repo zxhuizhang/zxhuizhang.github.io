@@ -247,6 +247,15 @@ main {
   max-height: 18px;
 }
 
+.visitor-online-widget[hidden],
+[data-online-status][hidden] { display: none; }
+.visitor-status__feedback,
+.visitor-status__provider {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.visitor-status__feedback:empty { display: none; }
+
 .visitor-globe {
   position: relative;
   justify-self: end;
