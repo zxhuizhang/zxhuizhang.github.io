@@ -27,11 +27,11 @@
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_site_pv">
             <span>访问</span>
-            <strong id="busuanzi_site_pv">...</strong>
+            <strong id="busuanzi_site_pv">318</strong>
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_site_uv">
             <span>访客</span>
-            <strong id="busuanzi_site_uv">...</strong>
+            <strong id="busuanzi_site_uv">119</strong>
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_page_pv">
             <span>本页</span>
@@ -48,14 +48,15 @@
         </div>
         <span class="visitor-status__feedback" data-counter-feedback aria-live="polite"></span>
         <a class="visitor-status__provider" href="https://whos.amung.us/stats/zxhuizhang/" target="_blank" rel="noopener">在线统计详情</a>
-        <details class="visitor-globe">
+        <details class="visitor-globe" open>
           <summary>访客地球</summary>
           <div class="visitor-globe__body">
-            <div class="visitor-globe__visual" aria-hidden="true"></div>
+            <canvas class="visitor-earth" width="440" height="280" aria-label="世界地球底图，下方为第三方访客地图"></canvas>
             <div class="visitor-globe__map" aria-label="实时访客位置">
               <script id="_wauzxm">var _wau = _wau || []; _wau.push(["map", "zxhuizhang", "zxm", "260", "130", "night", "cross-blue"]);</script>
               <script async src="https://waust.at/m.js"></script>
             </div>
+            <p class="visitor-map-note">地球为地理底图；访问位置由下方第三方地图提供，仅为 IP 大致位置，不显示个人身份。</p>
           </div>
         </details>
       </aside>
@@ -765,7 +766,10 @@
       <span>AI 药物发现 / 生物信息学</span>
     </div>
   </footer>
-  <script defer src="/js/visitor-counters.js"></script>
+  <script defer src="/js/visitor-counters-v2.js"></script>
   <script defer src="/js/visitor-status.js"></script>
+  <script defer src="/js/vendor/d3.min.js"></script>
+  <script defer src="/js/vendor/topojson-client.min.js"></script>
+  <script defer src="/js/visitor-earth.js"></script>
 </body>
 </html>

@@ -12,6 +12,13 @@
   --max-width: 1120px;
 }
 
+.visitor-earth { display: block; width: 100%; height: auto; }
+.visitor-map-note { color: #dce8ed; font-size: 11px; margin: 0; line-height: 1.5; }
+.md-lesson-video { display: block; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border: 0; background: #101d25; object-fit: contain; }
+.md-learning { scroll-margin-top: 24px; }
+.classroom-banner { display: block; width: 100%; height: auto; margin-bottom: 24px; }
+.md-learning .case-flow { margin-bottom: 20px; }
+
 * {
   box-sizing: border-box;
 }
@@ -287,12 +294,13 @@ main {
 }
 
 .visitor-globe__body {
-  position: absolute;
+  position: relative;
   top: calc(100% + 8px);
   right: 0;
   z-index: 40;
   width: min(330px, calc(100vw - 36px));
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   padding: 12px;
   border: 1px solid rgba(191, 226, 255, 0.28);
@@ -335,14 +343,26 @@ main {
 }
 
 .visitor-globe__map {
+  position: relative;
+  width: 100%;
+  min-width: 0;
   min-height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 4px;
   background: #07101c;
+}
+
+.visitor-globe__map > span { margin-right: 0 !important; flex: 0 0 260px; }
+.visitor-globe__body .visitor-earth { width: 220px; max-width: 100%; margin: auto; }
+.visitor-globe__body .visitor-map-note { white-space: normal; overflow-wrap: anywhere; }
+@media (min-width: 800px) {
+  .visitor-globe__body { width: 510px; grid-template-columns: 200px minmax(0, 1fr); align-items: center; }
+  .visitor-globe__body .visitor-earth { width: 200px; }
+  .visitor-globe__body .visitor-map-note { grid-column: 1 / -1; }
 }
 
 .visitor-globe__map iframe,
@@ -495,10 +515,12 @@ main {
 }
 
 .hero-academic--top-visual .hero-academic__visual {
-  min-height: 280px;
+  min-height: 0;
   border-left: 0;
   border-bottom: 1px solid var(--line);
 }
+
+.hero-academic--top-visual .hero-academic__visual img { height: auto; object-fit: contain; }
 
 .hero-academic--top-visual .hero-academic__content {
   padding: 34px 38px 38px;

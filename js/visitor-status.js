@@ -27,11 +27,5 @@
   updateClock();
   window.setInterval(updateClock, 1000);
 
-  document.addEventListener('click', function (event) {
-    document.querySelectorAll('.visitor-globe[open]').forEach(function (panel) {
-      if (!panel.contains(event.target)) {
-        panel.removeAttribute('open');
-      }
-    });
-  });
+  // The map stays open until the visitor explicitly collapses it.
 })();

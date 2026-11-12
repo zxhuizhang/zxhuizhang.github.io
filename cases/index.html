@@ -27,11 +27,11 @@
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_site_pv">
             <span>Views</span>
-            <strong id="busuanzi_site_pv">...</strong>
+            <strong id="busuanzi_site_pv">318</strong>
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_site_uv">
             <span>Visitors</span>
-            <strong id="busuanzi_site_uv">...</strong>
+            <strong id="busuanzi_site_uv">119</strong>
           </span>
           <span class="visitor-status__metric" id="busuanzi_container_page_pv">
             <span>Page</span>
@@ -48,14 +48,15 @@
         </div>
         <span class="visitor-status__feedback" data-counter-feedback aria-live="polite"></span>
         <a class="visitor-status__provider" href="https://whos.amung.us/stats/zxhuizhang/" target="_blank" rel="noopener">Live statistics</a>
-        <details class="visitor-globe">
+        <details class="visitor-globe" open>
           <summary>Visitor Globe</summary>
           <div class="visitor-globe__body">
-            <div class="visitor-globe__visual" aria-hidden="true"></div>
+            <canvas class="visitor-earth" width="440" height="280" aria-label="World globe; visitor map below"></canvas>
             <div class="visitor-globe__map" aria-label="Live Visitor Locations">
               <script id="_wauzxm">var _wau = _wau || []; _wau.push(["map", "zxhuizhang", "zxm", "260", "130", "night", "cross-blue"]);</script>
               <script async src="https://waust.at/m.js"></script>
             </div>
+            <p class="visitor-map-note">Globe: geographic basemap. Visitor locations are supplied by the map below and are approximate, not personal identities.</p>
           </div>
         </details>
       </aside>
@@ -109,6 +110,20 @@
 
     
       
+
+<section class="content-section md-learning" id="md-learning">
+  <img class="classroom-banner" src="/images/panda-ai-classroom.png" alt="Panda computational drug discovery classroom, AI-generated illustration" loading="lazy">
+  <h2>Learning: molecular dynamics</h2>
+  <ol class="case-flow"><li>Structure and topology</li><li>Solvation and ions</li><li>Energy minimization</li><li>NVT / NPT equilibration</li><li>Production simulation</li><li>Trajectory analysis</li></ol>
+  <video class="md-lesson-video" controls playsinline preload="metadata" poster="/images/research/transmembrane-peptide-poster.jpg">
+    <source src="/videos/transmembrane-peptide.mp4" type="video/mp4">
+  </video>
+  <p>Cell-penetrating peptide trajectory example. A trajectory alone does not establish binding affinity or efficacy; sampling, replicates and analysis are needed.</p>
+  <h3>GROMACS beginner tutorial</h3>
+  <iframe class="md-lesson-video" loading="lazy" src="https://www.youtube-nocookie.com/embed/-S1eP-iWE8c" title="Molecular Dynamics Simulation with GROMACS: A Beginner's Tutorial" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <p>External tutorial by InSilicoSci; English audio. <a href="https://www.youtube.com/watch?v=-S1eP-iWE8c" target="_blank" rel="noopener">Watch on YouTube</a> · <a href="https://tutorials.gromacs.org/md-intro-tutorial.html" target="_blank" rel="noopener">Official GROMACS step-by-step tutorial</a></p>
+</section>
+
 <nav class="case-index" aria-label="Case Studies">
   
     <a href="#screening"><span>01</span> Small-molecule screening and optimization</a>
@@ -198,7 +213,10 @@
       <span>AI Drug Discovery / Bioinformatics</span>
     </div>
   </footer>
-  <script defer src="/js/visitor-counters.js"></script>
+  <script defer src="/js/visitor-counters-v2.js"></script>
   <script defer src="/js/visitor-status.js"></script>
+  <script defer src="/js/vendor/d3.min.js"></script>
+  <script defer src="/js/vendor/topojson-client.min.js"></script>
+  <script defer src="/js/visitor-earth.js"></script>
 </body>
 </html>
