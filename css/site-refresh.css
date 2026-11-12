@@ -1,0 +1,59 @@
+/* Shared panoramic masthead, compact metrics and normal-flow visitor footer. */
+body { background: #f7f9fa; }
+body::before, body::after { display: none; }
+.site-header { background: #fff; backdrop-filter: none; }
+.site-header__inner { padding: 12px 0; min-height: 0; grid-template-columns: minmax(250px,1fr) auto; grid-template-areas: "brand status" "nav lang"; gap: 12px 20px; }
+.site-brand { gap: 12px; align-self: center; }
+.site-brand__mark { width: 48px; height: 42px; font-size: 21px; background: #136f78; clip-path: none; border-radius: 4px; }
+.site-brand__name { font-size: 18px; }
+.site-brand__field { font-size: 12px; font-weight: 500; color: #65747b; }
+.site-nav { flex-wrap: wrap; gap: 8px 22px; font-size: 14px; }
+.site-nav a { white-space: nowrap; }
+.language-switcher { gap: 8px; }
+.language-switcher a { padding: 3px 7px; font-size: 12px; border: 0; box-shadow: none; }
+.visitor-status { width: auto; align-self: center; }
+.visitor-status__metrics { gap: 2px 8px; padding: 0; background: none; box-shadow: none; border: 0; }
+.visitor-status__metric { border: 0; background: none; padding: 2px 0; min-height: 24px; }
+.visitor-status__clock { flex-basis: 100%; justify-content: flex-end; }
+.visitor-status__online { min-width: 0; }
+.visitor-online-widget { min-width: 50px; }
+.site-panorama { position: relative; width: 100%; overflow: hidden; background: #164b46; }
+.site-panorama > img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
+.site-panorama__caption { position: absolute; top: 12%; left: max(24px, calc((100% - 1120px) / 2)); color: white; text-shadow: 0 2px 8px #123831; }
+.site-panorama__caption p { margin: 0; font-size: 36px; font-weight: 800; }
+.site-panorama__caption span { font-size: 14px; }
+body > main { padding: 30px 0 44px; }
+.hero-academic, .page-hero { border: 0; background: transparent; box-shadow: none; margin: 0 0 24px; }
+.hero-academic--top-visual .hero-academic__content { padding: 0 0 22px; }
+.hero-academic h1 { font-size: 30px; margin: 0 0 8px; }
+.hero-academic h2 { font-size: 19px; }
+.page-hero { padding: 0 0 22px; border-bottom: 1px solid #dce5e6; }
+.page-hero h1 { font-size: 30px; }
+.content-section { box-shadow: none; }
+.footer-visitors { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 24px 0; display: grid; grid-template-columns: minmax(0,1fr) 210px 262px; align-items: center; gap: 24px; }
+.footer-visitors__intro h2 { font-size: 18px; margin: 0 0 8px; }
+.footer-visitors__intro p { margin: 4px 0; font-size: 12px; color: #627078; }
+.footer-visitors__intro a { font-size: 13px; }
+.footer-visitors .visitor-earth { width: 210px; max-width: 100%; }
+.footer-visitors .visitor-globe__map { width: 262px; height: 132px; min-width: 0; }
+.site-footer__inner { border-top: 1px solid #e4ebec; min-height: 48px; font-size: 12px; }
+@media(min-width:1700px) { .site-panorama > img { height: 480px; aspect-ratio: auto; object-position: center 60%; } }
+@media(max-width:760px) {
+  .site-header__inner { grid-template-columns: 1fr auto; grid-template-areas: "brand lang" "status status" "nav nav"; gap: 10px; }
+  .visitor-status { justify-self: start; width: 100%; }
+  .visitor-status__metrics { justify-content: flex-start; }
+  .visitor-status__clock { flex-basis: auto; }
+  .site-nav { gap: 7px 18px; }
+  .site-brand { display: flex; }
+  .site-brand__name { font-size: 15px; }
+  .site-brand__mark { width: 38px; height: 36px; flex-shrink: 0; }
+  .site-brand__field { font-size: 10px; }
+  .site-panorama > img { aspect-ratio: 3 / 1; height: auto; }
+  .site-panorama__caption { top: 6%; left: 14px; }
+  .site-panorama__caption p { font-size: 22px; }
+  .site-panorama__caption span { display: none; }
+  .footer-visitors { grid-template-columns: 1fr; justify-items: center; gap: 12px; padding: 20px 0; }
+  .footer-visitors__intro { width: 100%; }
+  .footer-visitors .visitor-earth { width: 160px; }
+  body > main { padding-top: 22px; }
+}

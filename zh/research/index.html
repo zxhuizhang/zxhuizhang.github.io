@@ -8,6 +8,7 @@
   <meta name="description" content="AI 辅助药物发现的课题方向与动态展示。">
   <meta name="author" content="Zhangxin Hui">
   <link rel="stylesheet" href="/css/academia.css">
+  <link rel="stylesheet" href="/css/site-refresh.css">
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
   <header class="site-header">
@@ -46,19 +47,6 @@
             <span data-online-status>...</span>
           </span>
         </div>
-        <span class="visitor-status__feedback" data-counter-feedback aria-live="polite"></span>
-        <a class="visitor-status__provider" href="https://whos.amung.us/stats/zxhuizhang/" target="_blank" rel="noopener">在线统计详情</a>
-        <details class="visitor-globe" open>
-          <summary>访客地球</summary>
-          <div class="visitor-globe__body">
-            <canvas class="visitor-earth" width="440" height="280" aria-label="世界地球底图，下方为第三方访客地图"></canvas>
-            <div class="visitor-globe__map" aria-label="实时访客位置">
-              <script id="_wauzxm">var _wau = _wau || []; _wau.push(["map", "zxhuizhang", "zxm", "260", "130", "night", "cross-blue"]);</script>
-              <script async src="https://waust.at/m.js"></script>
-            </div>
-            <p class="visitor-map-note">地球为地理底图；访问位置由下方第三方地图提供，仅为 IP 大致位置，不显示个人身份。</p>
-          </div>
-        </details>
       </aside>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/">首页</a>
@@ -81,6 +69,10 @@
       </nav>
     </div>
   </header>
+  <section class="site-panorama" aria-label="AI 药物发现 / 生物信息学">
+    <img src="/images/panda-classroom-panorama.png" alt="Panda professor and students studying computational drug discovery; AI-generated illustration">
+    <div class="site-panorama__caption"><p>张鑫</p><span>AI 药物发现 / 生物信息学</span></div>
+  </section>
   <main>
     
 
@@ -209,6 +201,19 @@
 
   </main>
   <footer class="site-footer">
+    <section class="footer-visitors" aria-label="访客地球">
+      <div class="footer-visitors__intro">
+        <h2>访客地球</h2>
+        <p class="visitor-status__feedback" data-counter-feedback aria-live="polite"></p>
+        <p>位置为 IP 大致位置，不代表个人身份；地球仅为地理底图。</p>
+        <a href="https://whos.amung.us/stats/zxhuizhang/" target="_blank" rel="noopener">访问统计详情 →</a>
+      </div>
+      <canvas class="visitor-earth" width="440" height="280" aria-label="World geographic basemap"></canvas>
+      <div class="visitor-globe__map" aria-label="实时访客位置">
+        <script id="_wauzxm">var _wau = _wau || []; _wau.push(["map", "zxhuizhang", "zxm", "260", "130", "night", "cross-blue"]);</script>
+        <script async src="https://waust.at/m.js"></script>
+      </div>
+    </section>
     <div class="site-footer__inner">
       <span>&copy; 2026 张鑫 · Zhang Xin</span>
       <span>AI 药物发现 / 生物信息学</span>
