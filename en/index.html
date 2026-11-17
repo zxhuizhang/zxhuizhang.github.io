@@ -70,9 +70,22 @@
     </div>
   </header>
   <section class="site-panorama" aria-label="AI Drug Discovery / Bioinformatics">
-    <img src="/images/panda-classroom-panorama-v2.png" alt="Panda professor and students studying computational drug discovery with five GPU models and a Forbidden City courtyard; AI-generated illustration">
+    
+    <img src="/images/panda-classroom-panorama-v3.png" alt="Panda professor and students studying computational drug discovery with five GPU models and a Forbidden City courtyard; AI-generated illustration">
+    <button type="button" class="panorama-screen" data-liposome-open aria-label="Expand molecular animation" title="Expand molecular animation">
+      <video muted loop playsinline preload="none" poster="/images/liposome-schematic.jpg" aria-hidden="true" tabindex="-1"><source data-src="/videos/liposome-schematic.mp4" type="video/mp4"></video>
+    </button>
+    <div class="panorama-actions">
+      <button type="button" data-liposome-open>Expand molecular animation</button>
+      <button type="button" class="panorama-motion" data-play-label="Play animation" data-pause-label="Pause animation">Play animation</button>
+    </div>
     <div class="site-panorama__caption"><p>Zhang Xin</p><span>AI Drug Discovery / Bioinformatics</span></div>
   </section>
+  <dialog id="liposome-dialog" aria-labelledby="liposome-title">
+    <div class="liposome-dialog__heading"><h2 id="liposome-title">Liposome particle schematic</h2><button type="button" data-liposome-close aria-label="Close" title="Close">×</button></div>
+    <video controls muted loop playsinline preload="none" poster="/images/liposome-schematic.jpg"><source data-src="/videos/liposome-schematic.mp4" type="video/mp4"></video>
+    <p>Original geometric animation, not a molecular dynamics trajectory. <a href="https://formulationmm.computpharm.org/modules/liposome/" target="_blank" rel="noopener">Reference: FormulationMM liposome module</a></p>
+  </dialog>
   <main>
     
 
@@ -307,6 +320,7 @@
     </div>
   </footer>
   <script defer src="/js/cursor-capsule.js"></script>
+  <script defer src="/js/panorama-video.js"></script>
   <script defer src="/js/visitor-counters-v2.js"></script>
   <script defer src="/js/visitor-status.js"></script>
   <script defer src="/js/vendor/d3.min.js"></script>

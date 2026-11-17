@@ -70,9 +70,22 @@
     </div>
   </header>
   <section class="site-panorama" aria-label="AI 創薬 / バイオインフォマティクス">
-    <img src="/images/panda-classroom-panorama-v2.png" alt="Panda professor and students studying computational drug discovery with five GPU models and a Forbidden City courtyard; AI-generated illustration">
+    
+    <img src="/images/panda-classroom-panorama-v3.png" alt="Panda professor and students studying computational drug discovery with five GPU models and a Forbidden City courtyard; AI-generated illustration">
+    <button type="button" class="panorama-screen" data-liposome-open aria-label="分子アニメーションを拡大" title="分子アニメーションを拡大">
+      <video muted loop playsinline preload="none" poster="/images/liposome-schematic.jpg" aria-hidden="true" tabindex="-1"><source data-src="/videos/liposome-schematic.mp4" type="video/mp4"></video>
+    </button>
+    <div class="panorama-actions">
+      <button type="button" data-liposome-open>分子アニメーションを拡大</button>
+      <button type="button" class="panorama-motion" data-play-label="再生" data-pause-label="一時停止">再生</button>
+    </div>
     <div class="site-panorama__caption"><p>張 鑫</p><span>AI 創薬 / バイオインフォマティクス</span></div>
   </section>
+  <dialog id="liposome-dialog" aria-labelledby="liposome-title">
+    <div class="liposome-dialog__heading"><h2 id="liposome-title">リポソーム粒子の模式図</h2><button type="button" data-liposome-close aria-label="閉じる" title="閉じる">×</button></div>
+    <video controls muted loop playsinline preload="none" poster="/images/liposome-schematic.jpg"><source data-src="/videos/liposome-schematic.mp4" type="video/mp4"></video>
+    <p>独自の幾何学アニメーションです。実際の分子動力学軌跡ではありません。 <a href="https://formulationmm.computpharm.org/modules/liposome/" target="_blank" rel="noopener">参考：FormulationMM リポソームモジュール</a></p>
+  </dialog>
   <main>
     
 
@@ -417,6 +430,7 @@
     </div>
   </footer>
   <script defer src="/js/cursor-capsule.js"></script>
+  <script defer src="/js/panorama-video.js"></script>
   <script defer src="/js/visitor-counters-v2.js"></script>
   <script defer src="/js/visitor-status.js"></script>
   <script defer src="/js/vendor/d3.min.js"></script>
